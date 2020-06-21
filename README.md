@@ -1,3 +1,29 @@
+## Typescript Photo Gallery Api + Frontend Angular 9
+
+This project is a simple web server written in Typescript using Nodejs, MongoDB and Angular 9, with the purpose to store images for Clients Applications like web applications or mobile apps.
+
+**Backend Installation**
+````
+git clone https://github.com/TonyGll/photo-gallery-rest-api
+cd photo-gallery-rest-api
+npm install
+npm start
+````
+
+**Frontend Installation**
+````
+cd frontend
+ng build
+ng serve
+````
+
+**Screeshot1**
+![screenshot1](screen1.png)
+**Screeshot2**
+![screenshot2](screen2.png)
+**Screeshot3**
+![screenshot3](screen3.png)
+
 # Frontend
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.

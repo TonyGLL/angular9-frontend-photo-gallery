@@ -1,0 +1,35 @@
+<div class="row"  *ngIf="photos.length > 0; else no_photos_list">
+
+  <div class="col-md-4 p-4" *ngFor="let photo of photos">
+
+    <div class="card card-photo" (click)="selectedCard(photo._id)">
+
+      <div class="card-header">
+
+        {{ photo.title }}
+
+      </div>
+
+      <img [src]="'http://localhost:3000/' + photo.imagePath" alt="" class="img-card-top w-100">
+
+      <div class="card-body">
+
+        {{ photo.description }}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<ng-template #no_photos_list>
+
+  <div class="container d-flex justify-content-center">
+
+    <h1>Add a Photo</h1>
+
+  </div>
+
+</ng-template>
